@@ -1,4 +1,4 @@
-# Day 1 - 30 Day of Python Challenge
+# Day 1 - 30 Days of Python Challenge
 # Introduction
 
 # Checking operations
