@@ -74,12 +74,74 @@ print('Acronym or an abbreviation for the name Python For Everyone: ', ''.join([
 print('Acronym or an abbreviation for the name Coding For All: ', ''.join([word[0] for word in company.split()]))
 
 # 20. Use index to determine the position of the first occurrence of C in Coding For All.
+print('Determine the position of the first occurrence of C in Coding For All: ', company.index('C'))
+
 # 21. Use index to determine the position of the first occurrence of F in Coding For All.
+print('Determine the position of the first occurrence of F in Coding For All: ', company.index('F'))
+
 # 22. Use rfind to determine the position of the last occurrence of l in Coding For All People.
+print('Determine the position of the last occurrence of l in Coding For All People: ', 'Coding For All People'.rfind('l'))
+
 # 23. Use index or find to find the position of the first occurrence of the word 'because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+sentence = 'You cannot end a sentence with because because because is a conjunction'
+print('Find the position of the first occurrence of the word because in the following sentence: ', sentence.index('because'))
+
 # 24. Use rindex to find the position of the last occurrence of the word because in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+print('Find the position of the last occurrence of the word because in the following sentence: ', sentence.rindex('because'))
+
 # 25. Slice out the phrase 'because because because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+start_index = sentence.index('because')
+print('Slice out the phrase because because because in the following sentence: ', sentence[start_index:start_index + len('because because because')])
+
 # 26. Find the position of the first occurrence of the word 'because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+print('Find the position of the first occurrence of the word because in the following sentence: ', sentence.find('because'))
+
 # 27. Slice out the phrase 'because because because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+start_index2 = sentence.find('because')
+print('Slice out the phrase because because because in the following sentence: ', sentence[start_index2:start_index2 + len('because because because')])
+
 # 28. Does 'Coding For All' start with a substring Coding?
+print('Does Coding For All start with a substring Coding: ', company.startswith('Coding'))
+
 # 29. Does 'Coding For All' end with a substring coding?
+print('Does Coding For All end with a substring Coding: ', company.endswith('coding'))
+
+# 30. '   Coding For All      '  , remove the left and right trailing spaces in the given string.
+print('Remove the left and right trailing spaces in the given string: ', '   Coding For All      '.strip())
+
+# 31. Which one of the following variables return True when we use the method isidentifier():
+#   30DaysOfPython
+#   thirty_days_of_python
+print('Which one of the following variables return True when we use the method isidentifier(): ')
+print('30DaysOfPython: ', '30DaysOfPython'.isidentifier())
+print('thirty_days_of_python: ', 'thirty_days_of_python'.isidentifier())
+
+# 31. The following list contains the names of some of python libraries: ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']. Join the list with a hash with space string.
+libraries = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+print('Join the list with a hash with space string: ', ' # '.join(libraries))
+
+# 32. Use the new line escape sequence to separate the following sentences.
+print('Use the new line escape sequence to separate the following sentences: ')
+print('I am enjoying this challenge.\nI just wonder what is next.')
+
+# 33. Use a tab escape sequence to write the following lines.
+print('Use a tab escape sequence to write the following lines: ')
+print('Name\tAge\tCountry\tCity')
+print('Asabeneh\t250\tFinland\tHelsinki')
+
+# 34. Use the string formatting method to display the following:
+radius = 10
+area = 3.14 * radius ** 2
+formated_string = 'The area of a circle with radius {} is {:.2f} meters square.'.format(radius, area)
+print(formated_string)
+
+# 35. Make the following using string formatting methods:
+a = 8
+b = 6 
+print(f'{a} + {b} = {a + b}')
+print(f'{a} - {b} = {a - b}')
+print(f'{a} * {b} = {a * b}')
+print(f'{a} / {b} = {a / b}')
+print(f'{a} % {b} = {a % b}')
+print(f'{a} // {b} = {a // b}')
+print(f'{a} ** {b} = {a ** b}')
