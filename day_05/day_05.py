@@ -2,7 +2,6 @@
 
 # Lists
 
-
 # 1. Declare an empty list
 empty_list = []
 print('1. Declare an empty list: ', empty_list)

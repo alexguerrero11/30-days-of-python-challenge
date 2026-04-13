@@ -7,8 +7,8 @@
 - [x] Day 02 - Variables, Built in Functions
 - [x] Day 03 - Operators
 - [x] Day 04 - Strings
-- [ ] Day 05 - Lists
-- [ ] Day 06 - Tuples
+- [x] Day 05 - Lists
+- [x] Day 06 - Tuples
 - [ ] Day 07 - Sets
 - [ ] Day 08 - Dictionaries
 - [ ] Day 09 - Conditionals
