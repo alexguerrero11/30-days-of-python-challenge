@@ -36,13 +36,24 @@ print('5a. Get the value of skills: ', student['skills'])
 print('5b. Skills data type: ', type(student['skills']))
 
 # 6. Modify the skills values by adding one or two skills
+student['skills'].append('Javascript')
+student['skills'].append('HTML')
+print('6. Modify the skills values by adding one or two skills: ', student['skills'])
 
 # 7. Get the dictionary keys as a list
+print('7. Get the dictionary keys as a list: ', list(student.keys()))
 
 # 8. Get the dictionary values as a list
+print('8. Get the dictionary values as a list: ', list(student.values()))
 
 # 9. Change the dictionary to a list of tuples using items() method
+print('9. Change the dictionary to a list of tuples using items() method: ', list(student.items()))
 
 # 10. Delete one of the items in the dictionary
+del student['address']
+print('10. Delete one of the items in the dictionary - address: ', student)
 
 # 11. Delete one of the dictionaries
+del dog
+print('11. Delete one of the dictionaries - dog')
+#print(dog)
