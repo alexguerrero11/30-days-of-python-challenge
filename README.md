@@ -11,7 +11,7 @@
 - [x] Day 06 - Tuples
 - [x] Day 07 - Sets
 - [x] Day 08 - Dictionaries
-- [ ] Day 09 - Conditionals
+- [x] Day 09 - Conditionals
 - [ ] Day 10 - Loops
 - [ ] Day 11 - Functions
 - [ ] Day 12 - Modules
