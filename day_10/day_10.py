@@ -94,23 +94,31 @@ print(f'The sum of all evens is {even_sum}. And the sum of all odds is {odd_sum}
 print()
 
 
-
 # Exercises: Level 3
-import sys
-sys.path.append('../data')
+# import sys
+# import os
+# sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'data'))
 
-from countries import countries
-from countries_data import countries_data
+# from countries import countries
+# from countries_data import countries_data
 
 
 # 1. Go to the data folder and use the countries.py file. Loop through the countries and extract all the countries containing the word land.
-land_countries = []
-for country in countries:
-    if 'land' in country.lower():
-        land_countries.append(country)
-print('Countries containing land: ', land_countries)
+
+# land_countries = []
+# for country in countries:
+#     if 'land' in country.lower():
+#         land_countries.append(country)
+# print('Countries containing land: ', land_countries)
 
 # 2. This is a fruit list, ['banana', 'orange', 'mango', 'lemon'] reverse the order using loop.
+print('2. Reverse the order of fruit list using loop.')
+fruits = ['banana', 'orange', 'mango', 'lemon']
+reversed_fruits = []
+for i in range(len(fruits) - 1, -1, -1):
+    reversed_fruits.append(fruits[i])
+print(reversed_fruits)
+print()
 
 # 3. Go to the data folder and use the countries_data.py file.
 #   What are the total number of languages in the data
