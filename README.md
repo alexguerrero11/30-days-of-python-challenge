@@ -12,7 +12,7 @@
 - [x] Day 07 - Sets
 - [x] Day 08 - Dictionaries
 - [x] Day 09 - Conditionals
-- [ ] Day 10 - Loops
+- [x] Day 10 - Loops
 - [ ] Day 11 - Functions
 - [ ] Day 12 - Modules
 - [ ] Day 13 - List Comprehension
