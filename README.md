@@ -14,8 +14,8 @@
 - [x] Day 09 - Conditionals
 - [x] Day 10 - Loops
 - [x] Day 11 - Functions
-- [ ] Day 12 - Modules
-- [ ] Day 13 - List Comprehension
+- [x] Day 12 - Modules
+- [x] Day 13 - List Comprehension
 - [ ] Day 14 - Higher Order Functions
 - [ ] Day 15 - Python Type Errors
 - [ ] Day 16 - Python Date & Time
