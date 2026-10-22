@@ -85,21 +85,70 @@ print('4. Use filter to filter out countries containing land')
 
 def has_land(word):
     if 'land' not in word:
-        print(word)
+        return True
+    return False
 
 countries_without_land = filter(has_land, countries)
 print(list(countries_without_land))
+print()
+
+# 5. Use filter to filter out countries having exactly six characters.
+print('5. Use filter to filter out countries having exactly six characters.')
+
+def has_six_characters(word):
+    if len(word) == 6:
+        return True
+    return False
+
+countries_with_six_characters = filter(has_six_characters, countries)
+print(list(countries_with_six_characters))
+print()
+
+# 6. Use filter to filter out countries containing six letters and more in the country list.
+print('6. Use filter to filter out countries containing six letters and more in the country list.')
+
+def has_more_than_six_characters(word):
+    if len(word) >= 6:
+        return True
+    return False
+
+countries_with_more_than_six_characters = filter(has_more_than_six_characters, countries)
+print(list(countries_with_more_than_six_characters))
+print()
+
+# 7. Use filter to filter out countries starting with an 'E'
+print('7. Use filter to filter out countries starting with an E')
+
+def starts_with_e(word):
+    if word[0] == 'E':
+        return True
+    return False
+
+countries_starting_with_e = filter(starts_with_e, countries)
+print(list(countries_starting_with_e))
+print()
+
+# 8. Chain two or more list iterators (eg. arr.map(callback).filter(callback).reduce(callback))
+print('8. Chain two or more list iterators (eg. arr.map(callback).filter(callback).reduce(callback))')
 
 
 
-# Use filter to filter out countries having exactly six characters.
-# Use filter to filter out countries containing six letters and more in the country list.
-# Use filter to filter out countries starting with an 'E'
-# Chain two or more list iterators (eg. arr.map(callback).filter(callback).reduce(callback))
-# Declare a function called get_string_lists which takes a list as a parameter and then returns a list containing only string items.
-# Use reduce to sum all the numbers in the numbers list.
-# Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and Iceland are north European countries
-# Declare a function called categorize_countries that returns a list of countries with some common pattern (you can find the countries list in this repository as countries.js(eg 'land', 'ia', 'island', 'stan')).
-# Create a function returning a dictionary, where keys stand for starting letters of countries and values are the number of country names starting with that letter.
-# Declare a get_first_ten_countries function - it returns a list of first ten countries from the countries.js list in the data folder.
-# Declare a get_last_ten_countries function that returns the last ten countries in the countries list.
+# 9. Declare a function called get_string_lists which takes a list as a parameter and then returns a list containing only string items.
+print('9. Declare a function called get_string_lists which takes a list as a parameter and then returns a list containing only string items.')
+
+def get_string_lists(list):
+    for i in list:
+        if type(i) == 'string':
+            return True
+        return False
+
+names1 = filter(get_string_lists, names)
+print(list(names1))
+print()
+
+# 10. Use reduce to sum all the numbers in the numbers list.
+# 11. Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and Iceland are north European countries
+# 12. Declare a function called categorize_countries that returns a list of countries with some common pattern (you can find the countries list in this repository as countries.js(eg 'land', 'ia', 'island', 'stan')).
+# 13. Create a function returning a dictionary, where keys stand for starting letters of countries and values are the number of country names starting with that letter.
+# 14. Declare a get_first_ten_countries function - it returns a list of first ten countries from the countries.js list in the data folder.
+# 15. Declare a get_last_ten_countries function that returns the last ten countries in the countries list.
